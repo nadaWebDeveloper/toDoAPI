@@ -20,7 +20,6 @@ const fetchTodo = async () => {
         task.completed ? listTask.classList.add('success'):listTask.classList.add('active')
         list.appendChild(listTask);
     }
-    console.log(data);
     return data;
   } catch (error) {
     console.log(error);
