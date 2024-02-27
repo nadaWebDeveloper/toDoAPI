@@ -1,0 +1,55 @@
+body{
+    box-sizing: border-box;
+    background: rgba(91, 89, 214, 0.625);
+}
+
+.digital-clock{
+    display: flex;
+    justify-content: center;
+    color: azure;
+    font-size: 3rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.list-task{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 60vh;
+    width: 80%;
+    overflow: scroll;
+    margin-top: 2rem;
+    place-items: center;
+
+}
+.list-design{
+    border: 3px solid green;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 0.7rem;
+    box-shadow: 2px 3px 20px rgb(241, 238, 238);
+}
+h1{
+    text-align: center;
+    margin: 2rem;
+}
+.success{
+   background-color: rgba(127, 255, 212, 0.201);
+   text-decoration: line-through; 
+   
+}
+.active{
+    background-color: rgba(31, 33, 32, 0.893);
+    color: azure;
+}
+
+.copyright{
+    font-weight: 4rem;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    text-shadow: 2px 3px 20px rgb(241, 238, 238);
+
+}
