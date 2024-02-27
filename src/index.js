@@ -1,5 +1,6 @@
 const list = document.getElementsByClassName("list-task")[0];
 const digitalClocks = document.getElementsByClassName("digital-clock")[0];
+const header = document.querySelector('header');
 
 const fetchTodo = async () => {
   try {
@@ -10,7 +11,7 @@ const fetchTodo = async () => {
         const task = data[i];
         const listTask = document.createElement("h3");
         listTask.classList.add('list-design');
-        listTask.textContent = task.title;
+        listTask.textContent = task.title ;
 
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
@@ -19,7 +20,15 @@ const fetchTodo = async () => {
 
         task.completed ? listTask.classList.add('success'):listTask.classList.add('active')
         list.appendChild(listTask);
+
     }
+
+    const account = document.createElement('h2');
+    header.appendChild(account);
+    const activeTodos = data.filter((todo) => !todo.completed).length;
+    const completedTodos = data.length - activeTodos;
+    account.textContent = `Total Task: ${data.length}   Completed Task: ${completedTodos}  Active Task: ${activeTodos}`
+
     return data;
   } catch (error) {
     console.log(error);

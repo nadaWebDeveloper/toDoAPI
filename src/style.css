@@ -16,7 +16,7 @@ main{
 .list-task{
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 60vh;
+    height: 58vh;
     width: 80%;
     overflow: scroll;
     margin-top: 2rem;
@@ -53,3 +53,11 @@ h1{
     text-shadow: 2px 3px 20px rgb(241, 238, 238);
 
 }
+
+h2{
+    text-align: center;
+    border-bottom: 1px solid white;
+    
+    
+}
+
